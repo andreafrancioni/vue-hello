@@ -1,9 +1,13 @@
-import { createApp } from 'vue'
+const { createApp } = Vue;
 
-createApp({
-  data() {
-    return {
-      count: 0
+const opzioni = {
+    data: function () {
+        return {
+            message: 'Benvenuto, ',
+            nome: "",
+            cognome: "",
+        }
     }
-  }
-}).mount('#app')
+};
+
+createApp(opzioni).mount('#app')

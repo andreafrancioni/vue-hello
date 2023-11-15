@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My first VUE App</title>
-    </head>
-    <body>
-        <div id="app">
-            <button @click="count++">
-              Count is: {{ count }}
-            </button>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Vue App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>{{ message }}{{ nome }} {{cognome}}</h1>
+        
+        <h2>Inserisci i tuoi dati:</h2>
+        Nome: <input type="text" v-model="nome"><br>
+        Cognome: <input type="text" v-model="cognome">
+
+    </div>
+    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
