@@ -6,6 +6,7 @@ const opzioni = {
             message: 'Benvenuto, ',
             nome: "",
             cognome: "",
+            immagine: "https://placehold.co/600x400",
         }
     }
 };
